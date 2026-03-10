@@ -1,0 +1,50 @@
+:root{
+    --primary-grey : rgb(146, 146, 146);
+    /* Primary Color Palette - Deep Teal & Warm Sand */
+    --primary-dark: #0f4c5c;
+    --primary: #1a6b7d;
+    --primary-light: #2a9d8f;
+    --accent: #e9c46a;
+    --accent-warm: #f4a261;
+    --accent-deep: #e76f51;
+
+    /* Neutrals */
+    --bg-primary: #faf9f6;
+    --bg-secondary: #f5f3f0;
+    --surface: #ffffff;
+    --text-primary: #2d3436;
+    --text-secondary: #636e72;
+    --text-muted: #b2bec3;
+    --border: #dfe6e9;
+}
+
+body{
+    background-color: rgb(255, 132, 152);
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    font-size: 24px;
+}
+
+header{
+    background-color: var(--primary-grey);
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    margin:10px;
+
+}
+
+button{
+    border: 0px;
+    padding: 15px;
+    border-radius: 10px;
+}

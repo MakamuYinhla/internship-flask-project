@@ -1,0 +1,53 @@
+
+
+
+
+{% block content %}
+
+<div class="auth-card">
+    <div class="auth-header">
+        <h1>Sign In</h1>
+        <p>Enter your credentials to access your account</p>
+    </div>
+    <form>
+        <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <div class="input-wrapper">
+                <span class="input-icon">✉️</span>
+                <input type="email" class="form-input" placeholder="name@company.com">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Password</label>
+            <div class="input-wrapper">
+                <span class="input-icon">🔒</span>
+                <input type="password" class="form-input" placeholder="••••••••">
+                <span class="password-toggle">👁️</span>
+            </div>
+        </div>
+        <div class="form-options">
+            <label class="checkbox-wrapper">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="showPage('dashboard')">
+            Sign In →
+        </button>
+        <div class="divider">
+            <span>Or continue with</span>
+        </div>
+        <div class="social-login">
+            <button type="button" class="social-btn">G</button>
+            <button type="button" class="social-btn">in</button>
+            <button type="button" class="social-btn">🏢</button>
+        </div>
+        <div class="auth-footer">
+            Don't have an account? <a href="#" onclick="showPage('signup')">Sign up</a>
+        </div>
+    </form>
+</div>
+
+
+{% endblock content %}

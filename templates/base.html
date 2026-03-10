@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href ="{{url_for('static', filename='css/base.css')  }}" />
+</head>
+<body>
+    <header>
+        <a href="/">LOGO</a>
+        <div>
+            <ul>
+                <a href="/">HOME</a>
+                <a href="/book-list">Book List</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/help">Help</a>
+            </ul>
+        </div>
+        <div>
+            <button>LOGIN</button>
+            <button>LOGOUT</button>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+</body>
+</html>
